@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+h2 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif; 
+  }
+h3 {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+h4 {
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+p {
+    margin-bottom: 1.25rem;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif; 
+  }
+img {
+    width: 100%;
+    display: block;
+  }
+
+@media screen and (min-width: 800px) {
+ h1 {
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+h3 {
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+h4 {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    }
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1;
+ }
+}
+/* Index page CSS */
+.btn {
+    text-transform: uppercase;
+    color: white;
+    padding: 0.375rem 0.75rem;
+    letter-spacing: normal;
+    display: inline-block;
+    font-size: 0.875rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+.mainDiv{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+}
+.divBanner{
+    text-align: center;
+    color: white;
+    padding: 0 3em;
+}
+.divBanner h1{
+    text-transform: uppercase;
+}
+.divBanner p{
+    max-width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+.explore-btn{
+    padding: 0.9rem 1.6rem;
+    font-size: 1.3rem;
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+.explore-btn:hover{
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+/* Global page CSS */
+.section{
+    padding: 5rem 0;
+}
+.sectionTitle{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.sectionTitle h2 {
+    text-transform:uppercase;
+}
+span{
+    color: gold;
+}
+.sectionCenter{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+@media screen and (min-width:992px){
+    .sectionCenter{
+        width: 95vw;
+    }
+    
+}
+
+/* About page CSS */
+.aboutImg,
+.aboutInfo{
+    margin-bottom: 2rem;
+}
+@media screen and (min-width:992px) {
+    .aboutCenter{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        align-self: center;
+    }
+    .aboutImg,.aboutInfo{
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
+/* Shadow img*/
+@media screen and (min-width:1170px) {
+    .aboutImg::before {
+        content: "";
+        position: absolute;
+        border: 0.5rem solid gold;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        top: -1.5rem;
+        left: -1.5rem;
+        }
+    .aboutImg{
+        position: relative;
+    }
+    .aboutPhoto{
+        position: relative;
+    }
+}
+
+/* News page CSS */
+.menuItems:hover{
+    transform: scale(1.02);
+}
+
+/* Expanded CSS */
+@media screen and (min-width:768px){
+    .mainDiv{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),
+         url("./Images/main.png") center/cover no-repeat;
+    }
+   .divBanner{
+       padding: 0;
+   } 
+   .divBanner p{
+       max-width: 45rem;
+   }
+}
+.newsImage{
+    transition: 0.3s linear;
+    background: grey;
+    box-shadow: lightgrey;
+    margin-bottom: 2rem;
+}
+.newsImage:hover{
+    box-shadow: grey;
+    
+}
+.menuImageContainer{
+    position: relative;
+}
+.newsImage{
+    height: 15rem;
+    object-fit: cover;
+}
+.menuInfo{
+    padding: 1.25rem;
+}
+.menuItems{
+    border: 1px solid grey;
+    border-radius: 5px;    
+}
+
+.cardTitle {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+.property {
+    text-transform: uppercase;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .featuredCenter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menuItems{
+        flex: 0 0 calc(50% - 2rem);
+
+    }
+@media screen and (min-width: 1170px) {
+    
+    .menuItems{
+        flex: 0 0 calc(33.33% - 2rem);
+    } 
+}
+}
+
+.playercard {
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 2rem;
+}
+.forwardsection {
+    border: 1px solid gray;
+}
+
+.cardinfo {
+    color: white;
+}
+.defensesection {
+    border-bottom: 1px solid gray;
+}
+
+.tampabaylightning {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
+}
+
+.newjerseydevils {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
+}
+
+.newyorkislanders {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
+}
+
+.newyorkrangers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
+}
+
+.philadelphiaflyers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/tbl.jpg");
+    background-position: center;
+}
+
+.pittsburghpenguins {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/penguins.jpg");
+    background-position: center;
+}
+
+.bostonbruins {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/boston.png");
+    background-position: center;
+}
+
+.buffalosabres {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/buffalo.jpg");
+    background-position: center;
+}
+
+.montréalcanadiens {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/montreal.jpg");
+    background-position: center;
+}
+
+.ottawasenators {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/senators.png");
+    background-position: center;
+}
+
+.torontomapleleafs {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/toronto.png");
+    background-position: center;
+}
+
+.carolinahurricanes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/carolina.png");
+    background-position: center;
+}
+
+.floridapanthers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/florida.jpg");
+    background-position: center;
+}
+
+.washingtoncapitals {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/caps.jpg");
+    background-position: center;
+}
+
+.chicagoblackhawks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/chicago.png");
+    background-position: center;
+}
+
+.detroitredwings {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/detroit.jpg");
+    background-position: center;
+}
+
+.nashvillepredators {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/nashville.png");
+    background-position: center;
+}
+
+.st\.louisblues{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/blues.png");
+    background-position: center;
+}
+
+.calgaryflames{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/calgary.jpg");
+    background-position: center;
+}
+
+.coloradoavalanche {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/colorado.jpg");
+    background-position: center;
+}
+
+.edmontonoilers {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/edmonton.png");
+    background-position: center;
+}
+
+.vancouvercanucks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/vancouver.jpg");
+    background-position: center;
+}
+
+.anaheimducks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/anaheim.jpg");
+    background-position: center;
+}
+
+.dallasstars {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/dallas.png");
+    background-position: center;
+}
+
+.losangeleskings {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/lakings.jpg");
+    background-position: center;
+}
+
+.sanjosesharks {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/sharks.jpg");
+    background-position: center;
+}
+
+.columbusbluejackets {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/columbus.png");
+    background-position: center;
+}
+
+.minnesotawild {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/minnesota.jpg");
+    background-position: center;
+}
+
+.winnipegjets {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/winnipeg.png");
+    background-position: center;
+}
+
+.arizonacoyotes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/arizona.jpg");
+    background-position: center;
+}
+
+.vegasgoldenknights {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/vegas.jpg");
+    background-position: center;
+}
+
+.seattlekraken {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Images/seattle.png");
+    background-position: center;
+}
+
+.appear {
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+/* Table CSS */
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.table td, #standings th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+.table tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+  
+.table tr:hover {
+      background-color: #ddd;
+    }
+  
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: gold;
+    color: white;
+  }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHL Rosters</title>
+    <!--favicon icon-->
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
+    <!--Link the stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="rosters.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section class="section" id="news">
+        <!--Title-->
+         <div class="sectionTitle">
+             <h2>NHL <span>Rosters</span></h2>
+         </div>
+         <div class="sectionCenter">
+            <h3>What NHL team roster would you like to display?</h2>
+            <select name="NHLTeams" id="teamsDropdown">
+            </select>
+        </div>
+        <div class="sectionTitle">
+            <h3 id="teamTitle"></h3>
+        </div>
+    </section>
+    <!--Forwards section-->
+    <section class="section forwardsection">
+        <!-- Section title -->
+        <div class="sectionTitle">
+            <h2>Forwards</h2>
+        </div>
+        <!-- Forwards parent flex container -->
+        <div class="sectionCenter featuredCenter" id="forwards">
+            <!--Single forward card
+            <article class="menuItems playercard tampabaylightning">
+                <div class="menuInfo">
+                    <h3 id="fullname" class="cardTitle">Nikita Kucherov</h3>
+                    <p class="cardinfo" id="jersey"><span class="property">Jersey:&nbsp;</span>#86</p>
+                    <p class="cardinfo" id="position"><span class="property">Position:&nbsp;</span>Right Wing</p>
+                    <p class="cardinfo" id="age"><span class="property">Age:&nbsp;</span>28</p>
+                    <p class="cardinfo" id="country"><span class="property">Country:&nbsp;</span>RUS</p>
+                    <p class="cardinfo" id="height"><span class="property">Height:&nbsp;</span>5'10</p>
+                    <p class="cardinfo" id="weight"><span class="property">Weight:&nbsp;</span>190</p>
+                </div>
+            </article>
+            -->
+        </div>
+    </section>
+    <!--Defensemen section-->
+    <section class="section defensesection">
+        <!-- Section title -->
+        <div class="sectionTitle">
+            <h2>Defensemen</h2>
+        </div>
+        <!-- Defensemen parent flex container -->
+        <div class="sectionCenter featuredCenter" id="defensemen">
+        </div>
+    </section>
+    <!--Goalies section-->
+    <section class="section">
+        <!-- Section title -->
+        <div class="sectionTitle">
+            <h2>Goalies</h2>
+        </div>
+        <!-- Goalies parent flex container -->
+        <div class="sectionCenter featuredCenter" id="goalies">
+        </div>
+    </section>
+    
+</body>
+</html>
